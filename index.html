@@ -67,7 +67,9 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><p>This site is built with <a href="https://github.com/fastai/fastpages">fastpages</a>, An easy to use blogging platform with extra features for Jupyter Notebooks.</p>
+        <div class="home"><h1 id="posts">Posts</h1>
+
+<p>This site is built with <a href="https://github.com/fastai/fastpages">fastpages</a>, An easy to use blogging platform with extra features for Jupyter Notebooks.</p>
 
 <p><img src="/comp_physics/images/comp_vis_dark.png" alt="" title="https://github.com/fastai/fastpages" /></p>
 
@@ -75,11 +77,15 @@ window.onload = wrap_img;
 
 <p>You can edit the <code class="language-plaintext highlighter-rouge">index.html</code> file to change this content.</p>
 
+<h3 id="deriving-precipitation-from-geopotential-height">Deriving precipitation from geopotential height</h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VvjwJzVfXXQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<p>This animation shows 20 years of geopotential height, or atmospheric pressure, (left) and corresponding precipitation (right) over Europe. On the top left precipitation comes from a numerical weather model and on the bottom left precipitation is the output of a machine learning model trained to estimate precipitation using geopotential as the only input. Although precipitation is calculated using more inputs in the original numerical model, and there machine learning model does not consider the temporal component in the dataset, its output is surprisingly close to the original.</p>
 
+<h3 id="filtering-and-compressing-timeseries-of-multispectral-satellite-images">Filtering and compressing timeseries of multispectral satellite images</h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ofqgKtLIVZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<p>This video displays a time series of Sentinel-2 images over a farming area in New South Wales (Australia). On the left, the raw images, as they are received from the satellite, are represented. On the right, we use machine learning to clean the images from noise coming from clouds and shadows. Using convolutional neural networks we can calculate a low-rank approximation of the original stack of images to capture the variance coming from the land surface and remove other atmospheric effects.</p>
 
-<h1 id="posts">Posts</h1>
+<h1 id="posts-1">Posts</h1>
 
 
 
