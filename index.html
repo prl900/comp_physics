@@ -15,6 +15,12 @@ This site is built with [fastpages](https://github.com/fastai/fastpages), An eas
 You can edit the `index.html` file to change this content.
 
 ### Deriving precipitation from geopotential height
+
+Precipitation is the result of a combination of physical and chemical processes happening in the atmosphere. The amount of rain cannot be directly computed by global numerical models because this process operates at temporal and spatial scales that are much smaller than the models' operating resolution. Instead, precipitation is estimated by NWP models using coarse approximations of these processes, which are referred as parameterisations. Parametrisations constitute a complex component of NWP models and normally require to be fine tuned so non-resolved physical processes are well represented across different areas and atmospheric situations.
+
+Data-driven methods using convolutional neural networks have been demonstrated to provide a simple and effective alternative to these parameterisation modules [[1]](#1).
+
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VvjwJzVfXXQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 This animation shows 20 years of geopotential height, or atmospheric pressure, (left) and corresponding precipitation (right) over Europe. On the top left precipitation comes from a numerical weather model and on the bottom left precipitation is the output of a machine learning model trained to estimate precipitation using geopotential as the only input. Although precipitation is calculated using more inputs in the original numerical model, and there machine learning model does not consider the temporal component in the dataset, its output is surprisingly close to the original.
 
@@ -22,5 +28,10 @@ This animation shows 20 years of geopotential height, or atmospheric pressure, (
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ofqgKtLIVZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 This video displays a time series of Sentinel-2 images over a farming area in New South Wales (Australia). On the left, the raw images, as they are received from the satellite, are represented. On the right, we use machine learning to clean the images from noise coming from clouds and shadows. Using convolutional neural networks we can calculate a low-rank approximation of the original stack of images to capture the variance coming from the land surface and remove other atmospheric effects.
 
+### References
+<a id="1">[1]</a> 
+Larraondo, Pablo Rozas and Renzullo, Luigi J and Inza, Inaki and Lozano, Jose A (2019).
+A data-driven approach to precipitation parameterizations using convolutional encoder-decoder neural networks.
+arXiv preprint arXiv:1903.10274
 
 # Posts
