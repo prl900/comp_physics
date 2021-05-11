@@ -67,17 +67,15 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><h1 id="posts">Posts</h1>
+        <div class="home"><h1 id="data-driven-physics">Data-driven physics</h1>
 
-<p>This site is built with <a href="https://github.com/fastai/fastpages">fastpages</a>, An easy to use blogging platform with extra features for Jupyter Notebooks.</p>
+<p>Currently, the technical capacity to sense and measure the physical processes occurring in our planet surpasses our ability to transmit, store and analyse the generated data. Some of the largest supercomputers and data centres in the world are dedicated to running numerical simulations modelling Earth processes, but only a small part of the available observed data is assimilated by these models, hindering their potential to represent reality.</p>
 
-<p><img src="/comp_physics/images/comp_vis_dark.png" alt="" title="https://github.com/fastai/fastpages" /></p>
+<p>Machine learning, or data-driven, methodologies have long been regarded as promising alternatives to traditional computational physics. These will eventually enable and expand our capacity to understand and represent the data processes. However, progress has been modest, for two reasons. First, most common machine learning methodologies are not well suited to representing the dynamical nature of physical processes, which are normally captured by differential equations. Second, current machine learning software frameworks do not scale well to the sizes of these datasets.</p>
 
-<p><a href="https://github.com/fastai/fastpages">fastpages</a> automates the process of creating blog posts via GitHub Actions, so you don’t have to fuss with conversion scripts.  A full list of features can be found on <a href="https://github.com/fastai/fastpages">GitHub</a>.</p>
+<p>The following two sections describe examples demonstrating the potential of machine learning methods to represent dynamical processes in the atmosphere and land surface.</p>
 
-<p>You can edit the <code class="language-plaintext highlighter-rouge">index.html</code> file to change this content.</p>
-
-<h3 id="deriving-precipitation-from-geopotential-height">Deriving precipitation from geopotential height</h3>
+<h2 id="deriving-precipitation-from-geopotential-height">Deriving precipitation from geopotential height</h2>
 
 <p>Precipitation is the result of a combination of physical and chemical processes happening in the atmosphere. The amount of rain cannot be directly computed by global numerical models because this process operates at temporal and spatial scales that are much smaller than the models’ operating resolution. Instead, precipitation is estimated by NWP models using coarse approximations of these processes, which are referred as parameterisations. Parametrisations constitute a complex component of NWP models and normally require to be fine tuned so non-resolved physical processes are well represented across different areas and atmospheric situations.</p>
 
@@ -88,14 +86,14 @@ window.onload = wrap_img;
 
 <p>Although precipitation is calculated using more significantly more inputs in the original parameterisation, such as water content, solar radiation, dust particles and their evolution through time, the data-driven approach is surprisingly close to the original.</p>
 
-<h3 id="filtering-and-compressing-timeseries-of-multispectral-satellite-images">Filtering and compressing timeseries of multispectral satellite images</h3>
+<h2 id="filtering-and-compressing-timeseries-of-multispectral-satellite-images">Filtering and compressing timeseries of multispectral satellite images</h2>
 
 <p>Satellite images provide valuable information about the surface of the Earth. However, interpreting the images is not easy. Nearly 70% of our planet is covered by clouds at any given points. This means that most images available need to be filtered and calibrated to remove other atmospheric effects before the Earth’s surface can be studied. Changes happening in the surface typically happen at lower temporal scales than those in the atmosphere, suggesting that land dynamics can be accurately described using a lower-dimensional space than the original data. Under this premise, we can use machine learning to calculate low-rank approximations of timeseries of the original satellite images to remove the effects of clouds and shadows <a href="#2">[2]</a>.</p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ofqgKtLIVZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 <p>This video shows a time lapse of Sentinel-2 images over a farming area in New South Wales (Australia). On the left, the raw images, as they are received from the satellite. On the right, the result of the low-rank decomposition using machine learning to clean the images from noise coming from clouds and shadows. This algorithm is able to to capture the variance coming from the land surface and remove other atmospheric effects.</p>
 
-<h3 id="references">References</h3>
+<h2 id="references">References</h2>
 <p><a id="1">[1]</a> 
 Larraondo, Pablo Rozas and Renzullo, Luigi J and Inza, Inaki and Lozano, Jose A (2019).
 A data-driven approach to precipitation parameterizations using convolutional encoder-decoder neural networks.
@@ -106,7 +104,7 @@ Larraondo, Pablo Rozas and van Dijk, I J M and Yebra, M (2021).
 Decomposition of multispectral Sentinel-2 time series using neuralnetworks for enhanced quality control, missing data imputation andcompression. 
 ISPRS Journal of Photogrammetry and Remote Sensing (submitted)</p>
 
-<h1 id="posts-1">Posts</h1>
+<h1 id="posts">Posts</h1>
 
 
 
