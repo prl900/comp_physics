@@ -11,6 +11,9 @@ permalink: /about/
 
 I am a reasearcher at the Australian National University combining how high performance computers and machine learning methodologies to represent and understand dynamic processes in the atmosphere and at the Earth’s surface using observed data.
 
+<br>
+<br>
+
 ### Publications 
 1. P. Rozas Larraondo, I. Inza, and J. A. Lozano. A Method for Wind Speed Forecasting in Airports Based on Non-parametric Regression.Weather and Forecasting,29(6):1332–1342, 2014.
 2. A. Salehi, J. Jimenez-Berni, D.M. Deery, D. Palmer, E. Holland, P. Rozas-Larraondo,S.C. Chapman, D. Georgakopoulos, and R.T. Furbank. SensorDB: a virtual laboratoryfor the integration, visualization and analysis of varied biological sensor data.PlantMethods, 11(8):53–59, 2015.
