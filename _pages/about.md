@@ -6,11 +6,9 @@ permalink: /about/
 
 ## Dr Pablo Rozas Larraondo
 
-![]({{site.baseurl}}/images/PabloRozas.jpg)
-
-<img align="left" width="100" height="100" src="https://github.com/prl900/comp_physics/raw/master/images/PabloRozas.jpg">
-
 ### Bio
+<img align="left" width="150" height="150" src="https://github.com/prl900/comp_physics/raw/master/images/PabloRozas.jpg">
+
 I am a reasearcher at the Australian National University combining how high performance computers and machine learning methodologies to represent and understand dynamic processes in the atmosphere and at the Earth’s surface using observed data.
 
 ### Publications 
